@@ -1,9 +1,7 @@
 package stepdefinition;
 
-import org.junit.jupiter.api.Assertions;
-import org.testng.asserts.SoftAssert;
 
-import io.cucumber.java.en.Given;
+import org.testng.asserts.SoftAssert;
 
 public class LoginPage
 {
@@ -12,7 +10,7 @@ public class LoginPage
 	{
 
 		
-		Assertions soft = new Assertions();
+		SoftAssert soft = new SoftAssert();
 		soft.assertEquals("hello", "Hello");
 		soft.assertAll();
 		System.out.println("ok");
