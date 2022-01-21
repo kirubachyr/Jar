@@ -3,13 +3,25 @@ package stepdefinition;
 
 import org.testng.asserts.SoftAssert;
 
+import io.cucumber.java.en.Given;
+
 public class LoginPage
 {
 
-	public static void main(String args[])
-	{
+	@Given("printing hello")
+	public void printing_hello() {
+		System.out.println("hello");
+	}
 
-		
+	@Given("printing hello world")
+	public void printing_hello_world() {
+		System.out.println("hello world");
+
+	}
+	
+	
+	void hello()
+	{
 		SoftAssert soft = new SoftAssert();
 		soft.assertEquals("hello", "Hello");
 		soft.assertAll();
